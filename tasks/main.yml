@@ -1,0 +1,6 @@
+---
+# tasks file for loophosts
+- name: Loop inventory hosts then save them to /etc/loophosts
+  ansible.builtin.template:
+    src: loop.j2
+    dest: /etc/loophosts
